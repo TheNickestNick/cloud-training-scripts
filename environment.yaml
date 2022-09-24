@@ -1,0 +1,17 @@
+name: cloud-training
+channels:
+  - pytorch
+  - conda-forge
+dependencies:
+  - python
+  - pip
+  - pytorch
+  - torchvision
+  - numpy
+  - cudatoolkit=11.6
+  - fire
+  - tqdm
+  - pip:
+    - diffusers[training]==0.3.0
+    - transformers
+    - wandb
